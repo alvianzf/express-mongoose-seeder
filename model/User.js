@@ -1,13 +1,7 @@
 var mongoose = require('mongoose')
-var seeder = require('mongoose-seeder')
 var data = require('../seed/userSeed')
 
 const userSchema = new mongoose.Schema({
-    _id: {
-        type: Number,
-        requried: true,
-        unique: true
-    },
     username: {
         type: String,
         unique: true,

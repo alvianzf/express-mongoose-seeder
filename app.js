@@ -6,6 +6,7 @@ var logger = require('morgan');
 var mongoose = require('mongoose')
 var app = express();
 var db = require('./config/db')
+var argon = require('argon')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
